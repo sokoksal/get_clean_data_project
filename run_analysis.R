@@ -107,3 +107,5 @@ rm(i)
 tidydataset <- measurements.mean.std %>% 
    group_by(subjects, activities) %>% 
    summarise(across(.fns = mean))
+
+print(tidydataset)
